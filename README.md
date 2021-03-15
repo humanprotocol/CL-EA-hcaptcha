@@ -1,8 +1,7 @@
-# Chainlink Python Serverless External Adapter Template
+# Chainlink Python Serverless External Adapter For HCaptcha API
 
-![Lint and unit testing](https://github.com/thodges-gh/CL-EA-Python-Template/workflows/Lint%20and%20unit%20testing/badge.svg)
-
-This template shows a basic usecase of an external adapter written in Python for the CryptoCompare API. It can be ran locally, in Docker, AWS Lambda, or GCP Functions.
+This adaper is intended for verify the token from hcaptcha widget
+Built using the template - https://github.com/thodges-gh/CL-EA-Python-Template
 
 ## Install
 
@@ -29,6 +28,7 @@ Run the container
 ```
 docker run -it -p 8080:8080 cl-ea
 ```
+
 
 ## Run with Serverless
 
