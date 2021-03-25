@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 secret_key = os.environ.get('HCAPTCHA_SECRET_KEY', '0xEf618286496e03c9621C8B6a287569bC4d212dBA')
 env = os.environ.get('PYENV', 'dev')
+port = os.environ.get('PORT', 8080)
 
 @app.before_request
 def log_request_info():
@@ -24,4 +25,4 @@ def call_adapter():
 
 
 if __name__ == '__main__':
-    app.run(debug=True if env == 'dev' else False, host='0.0.0.0', port='8080', threaded=True)
+    app.run(debug=True if env == 'dev' else False, host='0.0.0.0', port=port, threaded=True)
