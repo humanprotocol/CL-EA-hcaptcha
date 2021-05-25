@@ -5,7 +5,7 @@ from adapter import Adapter
 
 app = Flask(__name__)
 
-secret_key = os.environ.get('HCAPTCHA_SECRET_KEY', '0xEf618286496e03c9621C8B6a287569bC4d212dBA')
+secret_key = os.environ.get('HCAPTCHA_SECRET_KEY', '0x6BEAa0fD14148A7b46b5151E1460D86826D40fc6')
 env = os.environ.get('PYENV', 'dev')
 port = os.environ.get('PORT', 8080)
 
